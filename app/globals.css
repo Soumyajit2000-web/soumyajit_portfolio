@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #0db9f2;
+  --color-background-light: #f5f8f8;
+  --color-background-dark: #050505;
+  --color-noir-glass: rgba(10, 10, 10, 0.6);
+  --color-terminal-bg: #0c0c0c;
+
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-body: var(--font-noto-sans), sans-serif;
+  --font-mono: monospace;
+
+  /* Retaining simple CSS animations that are efficient and easy */
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  --background: var(--color-background-light);
+  --foreground: #101e23;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-background-dark);
+    --foreground: #ffffff;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2c32;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0db9f2;
+}
+
+/* Animated Grid Background */
+.bg-grid-animated {
+  background-size: 50px 50px;
+  background-image:
+    linear-gradient(to right, rgba(13, 185, 242, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(13, 185, 242, 0.05) 1px, transparent 1px);
+  mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #0db9f2, transparent);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+}
+
