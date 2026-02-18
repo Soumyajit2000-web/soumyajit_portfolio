@@ -23,6 +23,7 @@ export default function Footer() {
             <Link
               href="https://github.com/Soumyajit2000-web"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="GitHub"
               className="w-10 h-10 rounded-full bg-[#101e23] flex items-center justify-center text-gray-400 hover:text-primary hover:bg-[#101e23]/80 transition-all"
             >
@@ -31,6 +32,7 @@ export default function Footer() {
             <Link
               href="https://www.linkedin.com/in/soumyajit-das-5288b7207/"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="w-10 h-10 rounded-full bg-[#101e23] flex items-center justify-center text-gray-400 hover:text-primary hover:bg-[#101e23]/80 transition-all"
             >
@@ -47,6 +49,7 @@ export default function Footer() {
             <Link
               href="https://x.com/Das123Tatai"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="Twitter"
               className="w-10 h-10 rounded-full bg-[#101e23] flex items-center justify-center text-gray-400 hover:text-primary hover:bg-[#101e23]/80 transition-all"
             >
