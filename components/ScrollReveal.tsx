@@ -24,7 +24,7 @@ export default function ScrollReveal({
   duration = 0.5,
   once = true,
 }: ScrollRevealProps) {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { once });
 
   const getVariants = () => {
@@ -69,6 +69,7 @@ export default function ScrollReveal({
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         transition={{ duration, delay, ease: "easeOut" }}
+        className="h-full"
       >
         {children}
       </motion.div>

@@ -2,34 +2,34 @@
 
 import ScrollReveal from "./ScrollReveal";
 
-export default function Timeline() {
-  const experiences = [
-    {
-      title: "Freelance Software Developer",
-      company: "Self Employed",
-      period: "May 2024 - Present",
-      description:
-        "Building custom web applications and digital solutions for diverse clients. Specializing in full-stack development using Next.js, Node.js, and modern cloud technologies.",
-      tag: "Current Role",
-    },
-    {
-      title: "Software Engineer",
-      company: "SigiloTech Pvt. Ltd.",
-      period: "May 2022 - May 2025",
-      description:
-        "Designed and implemented robust, scalable web solutions using React.js and Node.js. Led the development of a management system with 99.9% uptime. Mentored junior developers and ensured seamless API integration between frontend and backend.",
-      tag: "Full Time Role",
-    },
-    {
-      title: "Software Developer Intern",
-      company: "SigiloTech Pvt. Ltd.",
-      period: "Dec 2021 - Apr 2022",
-      description:
-        "Developed reusable UI components with React.js and Material-UI. Designed responsive web pages achieving 100% mobile responsiveness. Optimized frontend performance resulting in a 40% load time improvement.",
-      tag: "Internship",
-    },
-  ];
+const experiences = [
+  {
+    title: "Freelance Software Developer",
+    company: "Self Employed",
+    period: "May 2024 - Present",
+    description:
+      "Building custom web applications and digital solutions for diverse clients. Specializing in full-stack development using Next.js, Node.js, and modern cloud technologies.",
+    tag: "Current Role",
+  },
+  {
+    title: "Software Engineer",
+    company: "SigiloTech Pvt. Ltd.",
+    period: "May 2022 - May 2025",
+    description:
+      "Designed and implemented robust, scalable web solutions using React.js and Node.js. Led the development of a management system with 99.9% uptime. Mentored junior developers and ensured seamless API integration between frontend and backend.",
+    tag: "Full Time Role",
+  },
+  {
+    title: "Software Developer Intern",
+    company: "SigiloTech Pvt. Ltd.",
+    period: "Dec 2021 - Apr 2022",
+    description:
+      "Developed reusable UI components with React.js and Material-UI. Designed responsive web pages achieving 100% mobile responsiveness. Optimized frontend performance resulting in a 40% load time improvement.",
+    tag: "Internship",
+  },
+];
 
+export default function Timeline() {
   return (
     <section
       id="journey"

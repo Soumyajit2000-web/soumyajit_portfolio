@@ -2,33 +2,33 @@
 
 import ScrollReveal from "./ScrollReveal";
 
-export default function Skills() {
-  const skills = [
-    {
-      icon: "code",
-      title: "Frontend",
-      description:
-        "React.js, Next.js, Angular, TypeScript, Tailwind CSS, Material-UI, Redux",
-    },
-    {
-      icon: "dns",
-      title: "Backend",
-      description: "Node.js, Express.js, Nest.js, RESTful APIs, JWT",
-    },
-    {
-      icon: "build",
-      title: "Tools",
-      description: "Git, GitHub, VS Code, Web Performance Optimization",
-    },
-    {
-      icon: "settings",
-      title: "Methodologies",
-      description: "Agile/Scrum, SDLC, Responsive Design",
-    },
-  ];
+const skills = [
+  {
+    icon: "code",
+    title: "Frontend",
+    description:
+      "React.js, Next.js, Angular, TypeScript, Tailwind CSS, Material-UI, Redux",
+  },
+  {
+    icon: "dns",
+    title: "Backend",
+    description: "Node.js, Express.js, Nest.js, RESTful APIs, JWT",
+  },
+  {
+    icon: "build",
+    title: "Tools",
+    description: "Git, GitHub, VS Code, Web Performance Optimization",
+  },
+  {
+    icon: "settings",
+    title: "Methodologies",
+    description: "Agile/Scrum, SDLC, Responsive Design",
+  },
+];
 
+export default function Skills() {
   return (
-    <section id="about" className="py-20 bg-background-dark relative">
+    <section id="skills" className="py-20 bg-background-dark relative">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-[#101e23] via-background-dark to-background-dark opacity-50 pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <ScrollReveal className="mx-auto">
@@ -48,6 +48,7 @@ export default function Skills() {
               delay={index * 0.1}
               direction="up"
               width="100%"
+              className="h-full"
             >
               <div className="flex flex-col items-center gap-4 p-6 rounded-2xl bg-[#0a0f12] border border-white/5 hover:border-primary/30 transition-all hover:-translate-y-1 h-full">
                 <div className="p-3 rounded-full bg-[#101e23] text-primary">

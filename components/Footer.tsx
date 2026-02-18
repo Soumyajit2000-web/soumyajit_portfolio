@@ -21,27 +21,31 @@ export default function Footer() {
           </div>
           <div className="flex gap-6">
             <Link
-              href="#"
+              href="https://github.com/Soumyajit2000-web"
+              target="_blank"
+              aria-label="GitHub"
               className="w-10 h-10 rounded-full bg-[#101e23] flex items-center justify-center text-gray-400 hover:text-primary hover:bg-[#101e23]/80 transition-all"
             >
               <span className="material-symbols-outlined">code</span>
             </Link>
             <Link
               href="#"
-              className="w-10 h-10 rounded-full bg-[#101e23] flex items-center justify-center text-gray-400 hover:text-primary hover:bg-[#101e23]/80 transition-all"
+              aria-label="LinkedIn"
+              className="w-10 h-10 rounded-full bg-[#101e23] flex items-center justify-center text-gray-400 hover:text-primary hover:bg-[#101e23]/80 transition-all opacity-50 cursor-not-allowed"
             >
               <span className="material-symbols-outlined">work</span>
             </Link>
-            <Link
-              href="#"
+            <a
+              href="mailto:soumyajitd2000@gmail.com"
+              aria-label="Email"
               className="w-10 h-10 rounded-full bg-[#101e23] flex items-center justify-center text-gray-400 hover:text-primary hover:bg-[#101e23]/80 transition-all"
             >
               <span className="material-symbols-outlined">mail</span>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-4 pt-8 border-t border-white/5 text-sm text-gray-600">
-          <p>© 2024 Soumyajit. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Soumyajit. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-primary transition-colors">
               Privacy
