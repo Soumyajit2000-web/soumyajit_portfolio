@@ -59,7 +59,7 @@ export default function Timeline() {
                 <div className="absolute left-4 -translate-x-1/2 mt-2 w-4 h-4 rounded-full bg-[#101e23] border-2 border-primary shadow-[0_0_10px_rgba(13,185,242,0.4)] z-20"></div>
 
                 {/* Content */}
-                <div className="pl-6 md:pl-8 flex-1">
+                <div className="pl-12 md:pl-16 flex-1">
                   <ScrollReveal
                     direction="left"
                     delay={index * 0.1}
