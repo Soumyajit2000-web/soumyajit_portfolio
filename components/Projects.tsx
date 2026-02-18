@@ -116,7 +116,7 @@ export default function Projects() {
             </ScrollReveal>
           ))}
         </div>
-        <div className="mt-8 text-center sm:hidden">
+        {/* <div className="mt-8 text-center sm:hidden">
           <Link
             href="#"
             className="inline-flex items-center text-primary font-medium hover:underline"
@@ -126,7 +126,7 @@ export default function Projects() {
               arrow_outward
             </span>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
