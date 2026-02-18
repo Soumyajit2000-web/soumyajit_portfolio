@@ -44,7 +44,7 @@ export default function Skills() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {skills.map((skill, index) => (
             <ScrollReveal
-              key={index}
+              key={skill.title}
               delay={index * 0.1}
               direction="up"
               width="100%"

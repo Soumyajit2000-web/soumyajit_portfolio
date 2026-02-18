@@ -54,7 +54,7 @@ export default function Timeline() {
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <div key={index} className="relative flex items-start gap-8">
+              <div key={exp.title} className="relative flex items-start gap-8">
                 {/* Dot */}
                 <div className="absolute left-4 -translate-x-1/2 mt-2 w-4 h-4 rounded-full bg-[#101e23] border-2 border-primary shadow-[0_0_10px_rgba(13,185,242,0.4)] z-20"></div>
 
